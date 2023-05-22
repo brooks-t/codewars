@@ -3,15 +3,16 @@
 
 function printerError(s) {
 	let colors = "abcdefghijklm";
-	let good = 0;
 	let bad = 0;
 
 	for (let i = 0; i < s.length; i++) {
 		if (colors.includes(s[i])) {
-			good += 1;
+			continue;
 		} else {
 			bad += 1;
 		}
 	}
 	return `${bad}/${s.length}`;
 }
+
+console.log(printerError("aaaxbbbbyyhwawiwjjjwwm"))
