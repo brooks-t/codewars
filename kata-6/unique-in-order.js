@@ -7,3 +7,8 @@ const uniqueInOrder = (iterable) => {
 	}
 	return iterable.filter((char, i) => char !== iterable[i - 1]);
 };
+
+// an even better solution. You can spread a string into an array instead of using split or having to check if it's a string or array.
+var uniqueInOrder2 = function (iterable) {
+	return [...iterable].filter((a, i) => a !== iterable[i - 1]);
+};
