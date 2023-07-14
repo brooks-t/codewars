@@ -6,3 +6,9 @@ let array = [1, "brooks", 2, "cat", 3, "dog"];
 const filter_list = array.filter((item) => typeof item === "number");
 
 console.log(filter_list);
+
+/*
+function filter_list(l) {
+    return l.filter((item) => typeof item === 'number');
+}
+*/
