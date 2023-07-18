@@ -7,7 +7,7 @@ const calculator = (distance, busDrive, busWalk) => {
 	const busTime = busDrive / bus + busWalk / walk;
 	if (walkTime > 2) {
 		return "Bus";
-	} else if (walkTime < 0.17) {
+	} else if (walkTime < 1 / 6) {
 		return "Walk";
 	} else if (walkTime === busTime) {
 		return "Walk";
