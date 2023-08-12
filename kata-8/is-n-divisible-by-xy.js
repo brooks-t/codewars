@@ -13,6 +13,7 @@ console.log(isDivisible(3, 1, 3));
 console.log(isDivisible(12, 2, 6));
 console.log(isDivisible(100, 5, 3));
 
+// single line with arrow func and ternary operator
 const isDivisible2 = (n, x, y) => (n % x === 0 && n % y === 0 ? true : false);
 
 console.log(isDivisible2(3, 1, 4));
